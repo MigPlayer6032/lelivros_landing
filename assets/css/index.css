@@ -4,6 +4,15 @@ body {
 	background-color: rgb(226, 226, 226);
 	font-family: "Share Tech", sans-serif;
 }
+body::-webkit-scrollbar {
+	width: 10px;
+	border-radius: 50px;
+}
+body::-webkit-scrollbar-thumb {
+	width:8px;
+	border-radius: 50px;
+	background: url(../images/scroll.png);
+}
 .landing {
 	align-items: center;
 	pointer-events: none;
@@ -11,10 +20,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 325px;
+	height: calc(100vh - 50px);
 	background: rgb(200, 200, 209);
-	border-bottom-left-radius: 47px;
-	border-bottom-right-radius: 47px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-bottom: 15px;
 }
 
 .landing .subtitle {
@@ -84,4 +94,10 @@ body {
 	.dynamic-txts {
 		text-align: center;
 	}
+}
+
+section div.title{
+	font-weight: bold;
+	text-align: center;
+	color:#fc6d6d;
 }
