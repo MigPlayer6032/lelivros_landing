@@ -1,154 +1,180 @@
 @import url("../fonts/Poppins.css");
 
 body {
-	font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-nav.navbar{
-	width: 100%;
+nav.navbar {
+  width: 100%;
 }
 
 body::-webkit-scrollbar {
-	width: 10px;
-	border-radius: 50px;
+  width: 10px;
+  border-radius: 50px;
 }
+
 body::-webkit-scrollbar-thumb {
-	width:8px;
-	border-radius: 50px;
-	background: rgb(139, 139, 139);
+  width: 8px;
+  border-radius: 50px;
+  background: rgb(139, 139, 139);
 }
+
 .landing {
-	align-items: center;
-	pointer-events: none;
-	user-select: none;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: calc(100vh - 50px);
-	background-color: rgb(200, 200, 209);
+  align-items: center;
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 50px);
+  background-color: rgb(200, 200, 209);
 }
 
 .landing .subtitle {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: gray;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: gray;
 }
 
 .wrapper {
-	display: flex;
+  display: flex;
 }
+
 .wrapper .static-txt {
-	color: black;
-	font-size: 60px;
-	font-weight: 400;
-	text-align: center;
+  color: black;
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
 }
+
 .wrapper .dynamic-txts {
-	margin-left: -15px;
-	height: 90px;
-	line-height: 90px;
-	overflow: hidden;
+  margin-left: -15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
 }
+
 .dynamic-txts li {
-	list-style: none;
-	color: #fc6d6d;
-	font-size: 60px;
-	font-weight: 500;
-	position: relative;
-	top: 0;
-	animation: slide 12s steps(4) infinite;
+  list-style: none;
+  color: #fc6d6d;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
 }
+
 @keyframes slide {
-	100% {
-		top: -360px;
-	}
+  100% {
+    top: -360px;
+  }
 }
+
 .dynamic-txts li span {
-	position: relative;
-	margin: 5px 0;
-	line-height: 90px;
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
 }
+
 .dynamic-txts li span::after {
-	content: "";
-	position: absolute;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: rgb(200, 200, 209);
-	border-left: 2px solid #fc6d6d;
-	animation: typing 3s steps(10) infinite;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(200, 200, 209);
+  border-left: 2px solid #fc6d6d;
+  animation: typing 3s steps(10) infinite;
 }
+
 @keyframes typing {
-	40%,
-	60% {
-		left: calc(100% + 20px);
-	}
-	100% {
-		left: -5px;
-	}
+  40%,
+  60% {
+    left: calc(100% + 20px);
+  }
+
+  100% {
+    left: -5px;
+  }
 }
 
-@media (max-width: 750px) {
-	.wrapper {
-		flex-direction: column;
-	}
-	.dynamic-txts {
-		text-align: center;
-	}
+section div.title {
+  font-weight: bold;
+  text-align: center;
+  color: #fc6d6d;
 }
 
-section div.title{
-	font-weight: bold;
-	text-align: center;
-	color:#fc6d6d;
+div.arrow {
+  height: 50px;
 }
 
-div.arrow{
-	height: 50px;
-}
-
-div.arrow-animated{
-	width: 25px;
-	height: 25px;
-	border-bottom-right-radius: 5px;
-	border-bottom: 7.5px solid rgb(105, 105, 105);
-	border-right: 7.5px solid rgb(105, 105, 105);
-	transform: rotate(45deg);
-	animation: flutuante 3.5s ease-in-out infinite;
+div.arrow-animated {
+  width: 25px;
+  height: 25px;
+  border-bottom-right-radius: 5px;
+  border-bottom: 7.5px solid rgb(105, 105, 105);
+  border-right: 7.5px solid rgb(105, 105, 105);
+  transform: rotate(45deg);
+  animation: flutuante 1.5s ease-in-out infinite;
 }
 
 @keyframes flutuante {
-	0%{
-		margin-top: 100px;
-	}
-	49%{
-		margin-top: 145px;
-	}51%{
-	margin-top: 145px;
-	}
-	100%{
-		margin-top: 100px;
-	}
-} 
-
-div.gradient{
-	height: 50px;
-	background: linear-gradient(to bottom, rgb(200, 200, 209), white, white);
+  0% {
+    margin-top: 108px;
+  }
+  49% {
+    margin-top: 145px;
+  }
+  51% {
+    margin-top: 145px;
+  }
+  100% {
+    margin-top: 108px;
+  }
 }
 
-fieldset.card {
-	border-top: 1px solid #333;
-	border-bottom: none;
-	border-left: none;
-	border-right: none;
-	display: block;
-	text-align: center;
+div.gradient {
+  height: 50px;
+  background: linear-gradient(to bottom, rgb(200, 200, 209), white, white);
 }
 
-fieldset.card legend.card-title {
-	padding: 5px 50%;
-	margin-top: -23px;
+div.card div.card-title{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  position: relative;
 }
-fieldset.card legend.card-title div{
-	background: #fff;
+
+div.card div.card-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+div.card div.card-title::after {
+  content: "Sobre";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  font-size: 20px;
+  background: #FFF;
+  color: #fc6d6d;
+  padding: 5px;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .dynamic-txts {
+    text-align: center;
+  }
 }
