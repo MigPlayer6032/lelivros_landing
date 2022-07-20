@@ -1,7 +1,7 @@
-@import url("../fonts/Share Tech.css");
+@import url("../fonts/Poppins.css");
 
 body {
-	font-family: "Share Tech", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 nav.navbar{
@@ -123,9 +123,8 @@ div.arrow-animated{
 	}
 	49%{
 		margin-top: 145px;
-	}
-	51%{
-		margin-top: 145px;
+	}51%{
+	margin-top: 145px;
 	}
 	100%{
 		margin-top: 100px;
@@ -135,4 +134,21 @@ div.arrow-animated{
 div.gradient{
 	height: 50px;
 	background: linear-gradient(to bottom, rgb(200, 200, 209), white, white);
+}
+
+fieldset.card {
+	border-top: 1px solid #333;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	display: block;
+	text-align: center;
+}
+
+fieldset.card legend.card-title {
+	padding: 5px 50%;
+	margin-top: -23px;
+}
+fieldset.card legend.card-title div{
+	background: #fff;
 }
