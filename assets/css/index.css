@@ -4,6 +4,7 @@
   --primary-color: #fc6d6d;
   --landing-background: rgb(200, 200, 209);
   --arrow-color: rgb(105, 105, 105);
+  --scrollbar-color: rgb(139, 139, 139);
 }
 
 body {
@@ -22,7 +23,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   width: 8px;
   border-radius: 50px;
-  background: rgb(139, 139, 139);
+  background: var(--scrollbar-color);
 }
 
 .landing {
@@ -166,3 +167,13 @@ div.card div.card-title{
   font-weight: bold;
   text-decoration: underline #fc6d6d;
 }
+
+div.card div.card-description{
+  margin-left: 6vh;
+  margin-right: 6vh;
+  margin-bottom: 6vh;
+  font-size: 17px;
+  text-align: center;
+  align-items: center;
+}
+
