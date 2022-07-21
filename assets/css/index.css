@@ -1,5 +1,11 @@
 @import url("../fonts/Poppins.css");
 
+:root{
+  --primary-color: #fc6d6d;
+  --landing-background: rgb(200, 200, 209);
+  --arrow-color: rgb(105, 105, 105);
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -27,7 +33,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center;
   height: calc(100vh - 50px);
-  background-color: rgb(200, 200, 209);
+  background-color: var(--landing-background);
 }
 
 .landing .subtitle {
@@ -56,7 +62,7 @@ body::-webkit-scrollbar-thumb {
 
 .dynamic-txts li {
   list-style: none;
-  color: #fc6d6d;
+  color: var(--primary-color);
   font-size: 60px;
   font-weight: 500;
   position: relative;
@@ -82,8 +88,8 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgb(200, 200, 209);
-  border-left: 2px solid #fc6d6d;
+  background: var(--landing-background);
+  border-left: 2px solid var(--primary-color);
   animation: typing 3s steps(13) infinite;
 }
 
@@ -101,7 +107,7 @@ body::-webkit-scrollbar-thumb {
 section div.title {
   font-weight: bold;
   text-align: center;
-  color: #fc6d6d;
+  color: var(--primary-color);
 }
 
 div.arrow {
@@ -135,7 +141,7 @@ div.arrow-animated {
 
 div.gradient {
   height: 50px;
-  background: linear-gradient(to bottom, rgb(200, 200, 209), white, white);
+  background: linear-gradient(to bottom, var(--landing-background), white, white);
 }
 
 @media (max-width: 750px) {
@@ -150,7 +156,13 @@ div.gradient {
 div.card{
   margin: auto;
   border: none;
-  /*centralizar a div*/
-  justify-content: center;
-  
+  width: 100%; 
+}
+
+div.card div.card-title{
+  color: #fc6d6d;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline #fc6d6d;
 }
