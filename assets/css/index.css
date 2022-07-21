@@ -84,7 +84,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   background: rgb(200, 200, 209);
   border-left: 2px solid #fc6d6d;
-  animation: typing 3s steps(10) infinite;
+  animation: typing 3s steps(13) infinite;
 }
 
 @keyframes typing {
@@ -138,38 +138,6 @@ div.gradient {
   background: linear-gradient(to bottom, rgb(200, 200, 209), white, white);
 }
 
-div.card div.card-title{
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-div.card div.card-title::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #111;
-  transform: translateX(-50%);
-}
-
-div.card div.card-title::after {
-  content: "Sobre";
-  position: absolute;
-  bottom: -16px;
-  left: 50%;
-  font-size: 20px;
-  background: #FFF;
-  color: #fc6d6d;
-  padding: 5px;
-  transform: translateX(-50%);
-}
-
 @media (max-width: 750px) {
   .wrapper {
     flex-direction: column;
@@ -177,4 +145,12 @@ div.card div.card-title::after {
   .dynamic-txts {
     text-align: center;
   }
+}
+
+div.card{
+  margin: auto;
+  border: none;
+  /*centralizar a div*/
+  justify-content: center;
+  
 }
